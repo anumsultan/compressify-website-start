@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compressify</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="/css/style.css">
+
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="container">
+            <div class="main-header">
+                <img src="./images/header-logo.svg">
+                <ul class="menu-bar">
+                    <li> Home </li>
+                    <li> Features </li>
+                    <li> Compressed <span> PDF </span> </li>
+                    <li> About </li>
+                    <li> Contact </li>
+                    <button class="login-button"> Login
+                        <img src="./images/login-hover.svg" class="on-hover"> </button>
+                </ul>
+            </div>
+
+            <div class="below-header">
+                PDF Compressing 5 times a day *FREE.
+            </div>
+
+            <section id="hero-section">
+                <div class="pdf-compress">
+                    <h1 class="hero-heading"> Every tool you need to work with PDFs in one place </h1>
+                    <p class="hero-para"> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500 </p>
+                    <div class="hero-button">
+                        <button class="hero-plugin-btn"> <img src="./images/figma-plugin-icon.svg"> Figma Plugin
+                        </button>
+                        <button class="hero-compressed-btn">
+                            <img src="./images/compressed-online-icon.svg" class="without-hover">
+                            <img src="./images/compressed-online-icon1.svg" class="on-hover">
+                            Compressed Online
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="benefits-section">
+                <div class="benefits-sec">
+                    <h2 class="benefits-heading"> What Benefits </h2>
+                    <p class="benefits-para">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500</p>
+                </div>
+                <div class="benefit-scroll responsive">
+                    <div class="benefit-card">
+                        <div class="content">
+                            <div class="icon-box">
+                                <img src="./images/benefit-icon-filled.svg" alt="">
+                            </div>
+                            <h3>Dolor sit amet, tetur adipiscing elit.</h3>
+                        </div>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="content">
+                            <div class="icon-box">
+                                <img src="./images/benefit-icon-filled.svg" alt="">
+                            </div>
+                            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="content">
+                            <div class="icon-box">
+                                <img src="./images/benefit-icon-filled.svg" alt="">
+                            </div>
+                            <h3>Dolor sit amet, tetur adipiscing elit.</h3>
+                        </div>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="content">
+                            <div class="icon-box">
+                                <img src="./images/benefit-icon-filled.svg" alt="">
+                            </div>
+                            <h3>Dolor sit amet, tetur adipiscing elit.</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-arrows">
+                    <p class="left">
+                        <img src="./images/benefit-arrow1.svg" alt="">
+                    </p>
+                    <p class="right">
+                        <img src="./images/benefit-arrow2.svg""></p>
+                </div>
+
+
+            </section>
+
+
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+
+    <script>
+        $('.responsive').slick({
+            dots: false,
+            infinite: false,
+            centerMode: true,
+            centerPadding: '60px',
+            speed: 300,
+            arrows: false,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+        $('.left').click(function () {
+            $('.responsive').slick('slickPrev');
+        })
+
+        $('.right').click(function () {
+            $('.responsive').slick('slickNext');
+        })
+    </script>
+</body>
+
+</html>

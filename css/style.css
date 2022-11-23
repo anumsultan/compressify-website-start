@@ -1,0 +1,424 @@
+/* css reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy Semibold'), local('Gilroy-Semibold'),
+        url('../fonts/Gilroy-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy Medium'), local('Gilroy-Medium'),
+        url('../fonts/Gilroy-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy Bold'), local('Gilroy-Bold'),
+        url('../fonts/Gilroy-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+body{
+    font-family: 'Gilroy';
+   
+}
+
+.wrapper{
+    width: 2000px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+
+
+.main-header{
+    background-color: #FFFFFF;
+    box-shadow: 0px 10px 25px rgb(0 0 0 / 10%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    }
+
+
+.menu-bar{
+    display: flex;
+    font-size: 18px;
+    line-height: 24px;
+    color: #99A2A9;
+    gap: 30px;
+    align-items: center;
+}
+.menu-bar li span{
+    color: #0D99FF;
+    font-weight: 500;
+    position: relative;
+}
+
+.menu-bar li span:after {
+content: "";
+width: 6px;
+height: 6px;
+background-color: #0D99FF;
+border-radius: 50%;
+position: absolute;
+}
+
+
+.login-button{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 10px 42px;  
+gap: 10px;
+width: 119px;
+height: 40px;
+background-color: #011727;
+border-radius: 20px;
+color: #FFFFFF;
+font-size: 14px;
+}
+
+.login-button:hover {
+background-color: #0D99FF;
+color: #FFFFFF;
+border: 1px solid #0D99FF;
+}
+
+.login-button img.on-hover{
+    display: none;
+}
+
+.login-button:hover img.on-hover{
+    display: inline-block;
+}
+
+.below-header{
+    height: 40px;
+    background: #B078DB;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    justify-content: center;
+}
+
+.pdf-compress{
+    /* background:  #E4F4FF; */
+    text-align: center;
+    height: 640px;
+    /* background: url(../images/hero-left.png) left 0 top 0/auto no-repeat,
+    url(../images/hero-right.png) right 0 top 0/auto no-repeat; */
+    background: url(/images/hero-banner.png);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+    background-size: contain;
+    background-position: center;
+}
+
+.hero-heading{
+    max-width: 828px;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 60px;
+    color: #011727;
+    margin: 0 auto;
+    line-height: 1.2;
+}
+
+.hero-para{
+    max-width: 828px;
+    height: 48px;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #4D5D68;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 500;
+}
+
+.hero-plugin-btn{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 62px;
+    color: #FFFFFF;
+    background: #011727;
+    border-radius: 65px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 44px;
+    gap: 10px;
+    width: 210.33px;
+    height: 60px;
+    left: 386px;
+    top: 469px;
+}
+
+.hero-plugin-btn:hover {
+    background-color: #0D99FF;
+    color: #FFFFFF;
+    border: 1px solid #0D99FF;
+}
+
+
+.hero-compressed-btn{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 62px;
+    color: #011727;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 44px;
+    gap: 12px;
+    width: 277.48px;
+    height: 60px;
+    left: 617px;
+    top: 469px;
+    border: 2px solid rgba(1, 23, 39, 0.2);
+    border-radius: 65px;
+    background-color: #E4F4FF;
+} 
+
+.hero-compressed-btn:hover {
+    background-color: #011727;
+    color: #FFFFFF;
+}
+
+.hero-compressed-btn img.on-hover{
+    display: none;
+}
+.hero-compressed-btn img.without-hover{
+    display: inline-block;
+}
+.hero-compressed-btn:hover img.on-hover{
+    display: inline-block;
+}
+.hero-compressed-btn:hover img.without-hover{
+    display: none;
+}
+
+.hero-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#benefits-section{
+    background-color: #F8F7F7; 
+}
+
+.benefits-sec{
+    padding: 100px 0 0 0;
+}
+
+.benefits-heading{
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 60px;
+    align-items: center;
+    text-align: center;
+    color: rgb(1, 23, 39);
+   
+}
+
+.benefits-para{
+    width: 828px;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #4D5D68;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 11px;
+}
+
+.benefit-card {
+    background-color: white;
+    box-shadow: 0 0 6px rgb(0 0 0 / 10%);
+    border-radius: 20px;
+    position: relative;
+    width: 298px !important;
+    height: 180px;
+    margin: 150px 0;
+    border: 1px solid #F0F0F0;
+    box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.07);
+    margin-right: 20px;
+    margin-top: 60px;
+}
+
+.slick-center {
+    height: 100%;
+}
+.slick-center .content p{
+    display: block;
+}
+
+.benefit-card .content {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    height: 100%;
+    padding: 48px 24px;
+    color: #4D5D68;
+}
+
+.benefit-card p{
+    display:  none;
+    width: 240px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    align-items: center;
+    color: #4D5D68;
+    margin-top: 20px;
+}
+
+
+.benefit-card .icon-box{
+    position: absolute;
+    top: -40px;
+    left: 25px;
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    display: grid;
+    place-content: center;
+}
+
+
+.benefit-card:nth-child(1) .icon-box {
+    background-color: #FEC603;
+}
+.benefit-card:nth-child(1)::before {
+    content: '';
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(106.57deg, #FEC603 0%, rgba(255, 232, 154, 0) 26.22%);
+    opacity: 0.5;
+    border-top-left-radius: 20px;
+}
+
+
+.benefit-card:nth-child(2) .icon-box {
+    background-color: #FF8720;
+}
+
+.benefit-card:nth-child(2)::before {
+    content: '';
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(106.57deg, #FF8720 0%, rgba(255, 207, 166, 0) 26.22%);
+    opacity: 0.5;
+    border-top-left-radius: 20px;
+}
+
+
+.benefit-card:nth-child(3) .icon-box {
+    background-color:  #B078DB;
+}
+
+.benefit-card:nth-child(3)::before {
+    content: '';
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(106.57deg, #B078DB 0%, #B078DB 0%, rgba(223, 201, 241, 0) 26.22%);
+    opacity: 0.5;
+    border-top-left-radius: 20px;
+}
+
+
+.benefit-card:nth-child(4) .icon-box {
+    background-color: #0FE2C9;
+}
+
+.benefit-card:nth-child(4)::before {
+    content: '';
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(106.57deg, #0FE2C9 0%, rgba(159, 243, 233, 0) 26.22%);
+    opacity: 0.5;
+    border-top-left-radius: 20px;
+}
+
+.slider-arrows {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
